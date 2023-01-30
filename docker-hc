@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+curl -I --fail localhost:3001/ping || exit $?

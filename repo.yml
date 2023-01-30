@@ -1,0 +1,6 @@
+type: docker
+upstream:
+  - repo: '@balena/node-metrics-gatherer'
+    url: https://github.com/balena-io-modules/node-metrics-gatherer
+  - repo: open-balena-base
+    url: https://github.com/balena-io-modules/open-balena-base
