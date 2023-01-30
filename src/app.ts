@@ -14,6 +14,7 @@ app.use('/popularity', popularity);
 app.use('/featured-page', featuredPage);
 
 const metricsApp = express();
+
 metricsApp.get('/metrics', metricExporter);
 
 const setupAppServer = (

@@ -6,3 +6,5 @@ build
 # TypeScript compiler cache
 /.ts-node
 .vscode/
+
+coverage/

@@ -1,11 +1,12 @@
 {
-  "name": "@balena/marketing-backend",
+  "name": "@balena/popularity-metrics",
   "private": true,
-  "description": "Balena marketing backend",
+  "description": "Balena popularity metrics",
   "main": "src/app",
   "version": "0.0.1",
   "scripts": {
-    "test": "jest",
+    "test": "echo Tests are run via the docker build",
+    "test:in-container": "jest",
     "prettify": "balena-lint --fix src/ test/",
     "lint": "balena-lint src/ test/ && tsc --noEmit",
     "dev": "ts-node-dev src/app",
@@ -16,8 +17,11 @@
   "devDependencies": {
     "@balena/lint": "^6.2.0",
     "@types/express": "^4.17.13",
+    "@types/jest": "^29.4.0",
     "@types/morgan": "^1.9.3",
     "husky": "^8.0.2",
+    "jest": "^29.4.1",
+    "ts-jest": "^29.0.5",
     "ts-node-dev": "^2.0.0"
   },
   "dependencies": {

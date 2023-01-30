@@ -16,6 +16,6 @@ featuredPage.get('/', async (req: Request, res: Response) => {
 
 	resources = resources.filter((r) => !idsToExclude.has(r.id.toString()));
 	const toBeShown = chooseOnDistribution(resources);
-	
+
 	res.status(200).send(await getSinglePage(toBeShown.id));
 });
