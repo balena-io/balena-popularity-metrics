@@ -1,4 +1,5 @@
-import { isDisplayable, sdk } from './utils';
+import { getBalenaSdk } from '../balenaSdk';
+import { isDisplayable } from './utils';
 
 export interface App {
 	id: number;
@@ -8,24 +9,20 @@ export interface App {
 }
 
 export const getActiveApps = async () => {
-	const apps = (await sdk.pine.get({
-		resource: 'application',
-		options: {
-			// @ts-ignore
-			$select: ['id'],
-			$filter: {
-				is_of__class: 'app',
-				should_be_running__release: {
-					$ne: null,
-				},
-			},
-			$expand: {
-				should_be_running__release: {
-					$select: ['contract'],
-				},
+	const apps = (await getBalenaSdk().models.application.getAll({
+		$select: ['id'],
+		$filter: {
+			is_of__class: 'app',
+			should_be_running__release: {
+				$ne: null,
 			},
 		},
-	})) as unknown as App[];
+		$expand: {
+			should_be_running__release: {
+				$select: ['contract'],
+			},
+		},
+	})) as App[];
 
 	return apps.filter(isDisplayable);
 };

@@ -1,4 +1,5 @@
-import { isDisplayable, sdk } from './utils';
+import { getBalenaSdk } from '../balenaSdk';
+import { isDisplayable } from './utils';
 
 export interface Fleet {
 	id: number;
@@ -10,12 +11,11 @@ export interface Fleet {
 
 export const getActiveFleets = async () => {
 	const orgIdsNotToBePromoted = ['nebraltd'];
-
-	const fleets = (await sdk.pine.get({
+	const fleets = (await getBalenaSdk().pine.get({
 		resource: 'application',
 		options: {
-			// @ts-ignore
-			$select: ['id'],
+			// @ts-expect-error TS complains b/c the sdk's PublicDevice resource does not have an id field
+			$select: (['id'] as const).slice(),
 			$expand: {
 				owns__public_device: {
 					$count: {
@@ -33,7 +33,7 @@ export const getActiveFleets = async () => {
 			},
 			$filter: {
 				is_public: true,
-				is_of__class: 'fleet',
+				is_of__class: 'fleet' as const,
 				should_be_running__release: {
 					$ne: null,
 				},

@@ -1,6 +1,3 @@
-import { getSdk } from 'balena-sdk';
-export const sdk = getSdk();
-
 interface ResourceWithRunningRelease {
 	should_be_running__release: Array<{
 		contract: string;
