@@ -14,13 +14,12 @@ export const getActiveFleets = async () => {
 	const fleets = (await getBalenaSdk().pine.get({
 		resource: 'application',
 		options: {
-			// @ts-expect-error TS complains b/c the sdk's PublicDevice resource does not have an id field
-			$select: (['id'] as const).slice(),
+			$select: ['id'],
 			$expand: {
 				owns__public_device: {
 					$count: {
 						$filter: {
-							was_recently_online: 1,
+							was_recently_online: true,
 						},
 					},
 				},
