@@ -3,7 +3,7 @@
   "private": true,
   "description": "Balena popularity metrics",
   "main": "src/app",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "test": "echo Tests are run via the docker build",
     "test:in-container": "jest",
@@ -50,6 +50,6 @@
     }
   },
   "versionist": {
-    "publishedAt": "2022-11-08T14:25:30.675Z"
+    "publishedAt": "2023-02-03T12:44:05.883Z"
   }
 }
