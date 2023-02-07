@@ -10,7 +10,6 @@ export interface Fleet {
 }
 
 export const getActiveFleets = async () => {
-	const orgIdsNotToBePromoted = ['nebraltd'];
 	const fleets = (await getBalenaSdk().pine.get({
 		resource: 'application',
 		options: {
@@ -32,21 +31,10 @@ export const getActiveFleets = async () => {
 			},
 			$filter: {
 				is_public: true,
+				is_discoverable: true,
 				is_of__class: 'fleet' as const,
 				should_be_running__release: {
 					$ne: null,
-				},
-				public_organization: {
-					$any: {
-						$alias: 'po',
-						$expr: {
-							$not: {
-								po: {
-									handle: { $in: orgIdsNotToBePromoted },
-								},
-							},
-						},
-					},
 				},
 				owns__public_device: {
 					$any: {
