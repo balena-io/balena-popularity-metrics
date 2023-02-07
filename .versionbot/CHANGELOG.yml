@@ -1,4 +1,16 @@
 - commits:
+    - subject: Adds tests for most basic usage scenarios (#3)
+      hash: 6b69d47569cb31c326eea5030ba80dc03c4867aa
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Otávio Jacobi
+      nested: []
+  version: 0.0.3
+  title: ""
+  date: 2023-02-07T12:05:00.532Z
+- commits:
     - subject: Fixes pine fleet popularity query typings from balena-sdk (#2)
       hash: 0d2d5a9126d65b21010ecedc91c824c1f0f6dbe5
       body: ""
