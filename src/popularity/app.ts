@@ -13,6 +13,7 @@ export const getActiveApps = async () => {
 		$select: ['id'],
 		$filter: {
 			is_of__class: 'app',
+			is_discoverable: true,
 			should_be_running__release: {
 				$ne: null,
 			},
