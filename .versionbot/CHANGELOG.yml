@@ -1,4 +1,16 @@
 - commits:
+    - subject: Queries only for is_discoverable applications (#4)
+      hash: b7ef42371b415711642e673ecae533682cce3381
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Otávio Jacobi
+      nested: []
+  version: 0.0.4
+  title: ""
+  date: 2023-02-08T19:26:20.306Z
+- commits:
     - subject: Adds tests for most basic usage scenarios (#3)
       hash: 6b69d47569cb31c326eea5030ba80dc03c4867aa
       body: ""
