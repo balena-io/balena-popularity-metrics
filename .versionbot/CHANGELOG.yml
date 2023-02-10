@@ -1,4 +1,16 @@
 - commits:
+    - subject: Changes morgan logger (#5)
+      hash: 652faa5d3422de5b951ba1b76e9048a9a6f1f2ef
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Otávio Jacobi
+      nested: []
+  version: 0.0.5
+  title: ""
+  date: 2023-02-10T17:58:01.959Z
+- commits:
     - subject: Queries only for is_discoverable applications (#4)
       hash: b7ef42371b415711642e673ecae533682cce3381
       body: ""
