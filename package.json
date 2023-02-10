@@ -3,7 +3,7 @@
   "private": true,
   "description": "Balena popularity metrics",
   "main": "src/index",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "scripts": {
     "test": "echo Tests are run via the docker build",
     "test:in-container": "npm run lint && jest --silent --coverage --runInBand --collectCoverageFrom='src/**/*.{ts,jxs}'",
@@ -52,6 +52,6 @@
     }
   },
   "versionist": {
-    "publishedAt": "2023-02-10T18:53:10.215Z"
+    "publishedAt": "2023-02-10T19:09:54.590Z"
   }
 }

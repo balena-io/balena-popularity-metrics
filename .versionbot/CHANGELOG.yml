@@ -1,4 +1,16 @@
 - commits:
+    - subject: Fixes docker helathcheck (#8)
+      hash: 536e2dbd2b0316df81c1f9a1ce382a4da0e68138
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Otávio Jacobi
+      nested: []
+  version: 0.0.8
+  title: ""
+  date: 2023-02-10T19:09:54.523Z
+- commits:
     - subject: Changes startup file (#7)
       hash: ecee4b94bbbccb1e31eb5414a1450a10cea418d9
       body: ""
