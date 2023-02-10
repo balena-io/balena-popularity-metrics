@@ -1,4 +1,16 @@
 - commits:
+    - subject: Changes startup file (#7)
+      hash: ecee4b94bbbccb1e31eb5414a1450a10cea418d9
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Otávio Jacobi
+      nested: []
+  version: 0.0.7
+  title: ""
+  date: 2023-02-10T18:53:10.145Z
+- commits:
     - subject: Improves docs (#6)
       hash: ff5d94c5c7e6d152d9673b0efe034b63688d6e04
       body: ""
