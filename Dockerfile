@@ -20,4 +20,4 @@ COPY docker-hc docker-hc
 
 EXPOSE 80
 EXPOSE 9090
-CMD ["node", "src/app"]
+CMD ["node", "src/index"]
