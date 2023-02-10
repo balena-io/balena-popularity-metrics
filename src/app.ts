@@ -6,7 +6,7 @@ import { featuredPage } from './featuredPage';
 
 export const app = express();
 
-app.use(morgan('tiny'));
+app.use(morgan('combined'));
 app.use(healthRouter);
 app.use('/popularity', popularity);
 app.use('/featured-page', featuredPage);
