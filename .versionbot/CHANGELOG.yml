@@ -1,4 +1,16 @@
 - commits:
+    - subject: Improves docs (#6)
+      hash: ff5d94c5c7e6d152d9673b0efe034b63688d6e04
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Otávio Jacobi
+      nested: []
+  version: 0.0.6
+  title: ""
+  date: 2023-02-10T18:28:56.318Z
+- commits:
     - subject: Changes morgan logger (#5)
       hash: 652faa5d3422de5b951ba1b76e9048a9a6f1f2ef
       body: ""
