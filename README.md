@@ -18,13 +18,13 @@ Run the tests by doing `npm run test:in-container` to run application unit tests
 ### API
 This service expose the following endpoints:
 
-## /ping
+#### /ping
 A simple health check that returns the current running version.
 
-## /popularity/score
+#### /popularity/score
 Returns the score for all the resources in balena. The score format is a value on range 0-1. This score is also a probability distribution (e.g the sum of all scores should be 1). You can also use `/popularity/score/{resources}` where `{resource}` is either `fleets` or `apps` for querying only this specific resource.
 
-## /featured-page
+#### /featured-page
 This endpoint is a helpfull endpoint to choose randomly a page using the same distribution presented in `/popularity/score`. It conveniently returns information regarding one application and supports a `excludeIds` query parameter with a comma separated list of values for ids to be ignored from the distribution.
 
 
