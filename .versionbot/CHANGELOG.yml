@@ -1,4 +1,16 @@
 - commits:
+    - subject: Fixes deprecated pine orderby query (#9)
+      hash: dfc82bab0d8d80e52fda1f9e89c0148794bf94fe
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Otávio Jacobi
+      nested: []
+  version: 0.0.9
+  title: ""
+  date: 2023-02-14T13:24:47.804Z
+- commits:
     - subject: Fixes docker helathcheck (#8)
       hash: 536e2dbd2b0316df81c1f9a1ce382a4da0e68138
       body: ""
