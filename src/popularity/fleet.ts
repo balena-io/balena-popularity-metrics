@@ -47,8 +47,16 @@ export const getActiveFleets = async () => {
 					},
 				},
 			},
-			$orderby:
-				'owns__public_device/$count($filter=was_recently_online eq 1) desc',
+			$orderby: {
+				owns__public_device: {
+					$count: {
+						$filter: {
+							was_recently_online: true,
+						},
+					},
+				},
+				$dir: 'desc',
+			},
 		},
 	})) as unknown as Fleet[];
 
