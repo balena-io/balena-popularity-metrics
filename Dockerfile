@@ -1,4 +1,4 @@
-FROM balena/open-balena-base:no-systemd-v14.0.0 AS build
+FROM balena/open-balena-base:no-systemd-v16.0.7 AS build
 
 WORKDIR /usr/src/app
 
@@ -7,7 +7,7 @@ RUN npm ci
 RUN npm run build && npm run test:in-container
 
 # ---- Final image ----
-FROM balena/open-balena-base:no-systemd-v14.0.0
+FROM balena/open-balena-base:no-systemd-v16.0.7
 
 ENV NODE_ENV=prod
 WORKDIR /usr/src/app
