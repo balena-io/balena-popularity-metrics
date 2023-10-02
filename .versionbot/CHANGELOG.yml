@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update balena/open-balena-base from 14.0.0 to 16.0.7
+      hash: cc63a5de24fc78771f4e17826f0d7e18f1684618
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Anton Belodedenko
+      nested: []
+  version: 0.0.10
+  title: ""
+  date: 2023-10-02T16:46:47.009Z
+- commits:
     - subject: Fixes deprecated pine orderby query (#9)
       hash: dfc82bab0d8d80e52fda1f9e89c0148794bf94fe
       body: ""
